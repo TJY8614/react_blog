@@ -1,0 +1,87 @@
+.classify {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.classify main {
+  width: 70%;
+  box-shadow: rgba(165, 159, 159, 0.9) 0px 10px 20px 0px;
+  position: relative;
+  font-family: 微软雅黑;
+  box-sizing: border-box;
+  margin: auto auto 10px;
+  border-radius: 10px;
+  transition: all 0.8s ease 0s;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.classify .bg {
+  width: 100%;
+  height: 350px;
+}
+
+.classify .bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.classify .title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #fbc4c3;
+}
+
+.classify .gobackIco {
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+  font-size: 30px;
+  margin-left: 5%;
+  color: #fbc4c3;
+}
+
+.classify .content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.classify .content ul {
+  width: 100%;
+}
+
+.classify .content ul li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #6b97a0;
+}
+
+.classify .content ul li span:first-child {
+  font-weight: bold;
+  font-size: 20px;
+}
+.classify .content ul li:hover {
+  background-color: #f8f9fa;
+  color: #fbc4c3;
+}
+
+.classify .content ul li span .iconfont {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.classify .content .list {
+  transition: height 1s;
+  overflow: hidden;
+}
+
+.classify .content .list ul li {
+  padding-left: 20px;
+}

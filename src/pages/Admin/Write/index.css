@@ -1,0 +1,178 @@
+.write {
+  width: 70%;
+  background-color: #f7c3dc83;
+  margin: 0 auto;
+  border-radius: 8px;
+  color: #f7aacf;
+  font-size: 18px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.write .form {
+  padding: 20px 30px;
+}
+.write .title {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.write .title input {
+  width: 90%;
+  height: 45px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 20px;
+  color: #000;
+  outline: none;
+}
+
+.write .title input:focus {
+  border: 1px solid #91baf0;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #999;
+  font-size: 16px;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+  font-size: 16px;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #999;
+  font-size: 16px;
+}
+
+.write .tags {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.write .tags button {
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: none;
+  color: #999;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.write .tags button:hover {
+  color: #83b3f1;
+  border: 1px solid #83b3f1;
+  background-color: rgb(189, 208, 226);
+}
+
+.write .tags input {
+  width: 100px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  border: 2px solid #83b3f1;
+  color: #000;
+}
+
+.write .tags .item {
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  background-color: #fff;
+  border-radius: 3px;
+  margin-right: 8px;
+  padding: 0 10px;
+}
+
+.write .tags .item span {
+  color: #999;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.write .tags .item span:hover {
+  color: rgb(241, 135, 135);
+}
+
+.write .cover {
+  margin-bottom: 20px;
+}
+
+.write .file {
+  position: relative;
+  height: 35px;
+  background: #ffd0ff;
+  border: 1px solid #f599d9;
+  color: #c71e72;
+  border-radius: 4px;
+  padding: 4px 12px;
+  overflow: hidden;
+  text-decoration: none;
+  text-indent: 0;
+  font-size: 14px;
+}
+.write .file input {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+}
+.write .file:hover {
+  background: #aadffd;
+  border-color: 1px solid #78c3f3;
+  color: #004974;
+  text-decoration: none;
+}
+
+.write .cover img {
+  height: 150px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.write .coverImg {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+}
+
+.write .editor {
+  width: 100%;
+}
+
+.write .editor span {
+  float: left;
+}
+
+.write .bf-container {
+  float: left;
+  background-color: #fff;
+  width: 90%;
+}
+
+.write .submit {
+  float: right;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #f7c3dca9;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-right: 45px;
+  cursor: pointer;
+}
+.write .submit:hover {
+  background-color: #f1a3c9;
+}

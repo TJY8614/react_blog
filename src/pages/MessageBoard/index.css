@@ -1,0 +1,186 @@
+.messageBoard {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.messageBoard main {
+  width: 70%;
+  box-shadow: rgba(165, 159, 159, 0.9) 0px 10px 20px 0px;
+  position: relative;
+  font-family: 微软雅黑;
+  box-sizing: border-box;
+  margin: auto auto 10px;
+  border-radius: 10px;
+  transition: all 0.8s ease 0s;
+  margin-top: 20px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.messageBoard .bg {
+  width: 100%;
+}
+
+.messageBoard .bg img {
+  width: 100%;
+  height: 350px;
+}
+
+.messageBoard .title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #16bdd9;
+}
+
+.messageBoard .gobackIco {
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+  font-size: 30px;
+  margin-left: 5%;
+  color: #16bdd9;
+}
+
+.messageBoard .content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.messageBoard .content .intro {
+  width: 100%;
+  text-align: center;
+  color: #4ab1ce;
+}
+
+.messageBoard .content .submitButton {
+  float: left;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #4ab1cea4;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.messageBoard .content .submitButton:hover {
+  background-color: #4ab1ce;
+}
+
+.messageBoard .content .message {
+  float: left;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.messageBoard .content .message .item {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.messageBoard .content .message .item .avatar {
+  float: left;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  border: 1px solid #8bcddf;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.messageBoard .content .message .item .avatar span {
+  font-size: 30px;
+  color: #8bcddf;
+}
+
+.messageBoard .content .message .item .name {
+  color: #4ab1ce;
+}
+
+.messageBoard .content .message .item .time {
+  color: #ccc;
+}
+
+.messageBoard .content .message .item .text {
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 9%;
+  color: #83bfcf;
+}
+
+.messageBoard .content .message .item .reply {
+  width: 88%;
+}
+
+.messageBoard .content .message .item .reply .replyText {
+  float: right;
+  color: #d6a2bf;
+  cursor: pointer;
+}
+
+.messageBoard .content .message .item .reply .replyBox .btn {
+  width: 84%;
+  float: right;
+  height: 30px;
+  line-height: 30px;
+}
+
+.messageBoard .content .message .item .reply .replyBox .btn button {
+  background-color: #16bcd975;
+  border: none;
+  border-radius: 3px;
+  padding: 0 8px;
+  margin-top: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.messageBoard .content .message .item .reply .replyBox .btn button:hover {
+  background-color: #16bcd9;
+}
+
+.messageBoard .replyListBox {
+  width: 100%;
+  float: left;
+  padding-left: 10%;
+}
+
+.messageBoard .replyListBox .replyAvatar {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.messageBoard .replyListBox .replyAvatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.messageBoard .replyListBox .replyName {
+  width: 80%;
+  font-size: 16px;
+  color: #4ab1ce;
+}
+
+.messageBoard .replyListBox .replyTime {
+  color: #ccc;
+}
+
+.messageBoard .replyListBox .replyContent {
+  width: 80%;
+}
+
+.messageBoard .replyListBox span {
+  float: right;
+  color: #d6a2bf;
+  cursor: pointer;
+}

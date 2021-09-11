@@ -1,0 +1,194 @@
+:root {
+  --primary: #9decde;
+  --solid: #fff;
+  --btn-w: 10em;
+  --dot-w: calc(var(--btn-w) * 0.2);
+  --tr-X: calc(var(--btn-w) - var(--dot-w));
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../../asset/Home/homebg.png") no-repeat fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.header .avatar {
+  width: 13vw;
+  height: 13vw;
+  margin: 8vw auto;
+  margin-bottom: 3vw;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 8px solid #cde3d5;
+  transition: transform 1s;
+}
+
+.header .avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.header .avatar:hover {
+  -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+  transform: rotate(360deg);
+}
+
+.header .name {
+  position: relative;
+  width: 15vw;
+  height: 5vw;
+  line-height: 5vw;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 5vw;
+  color: #9decde;
+  font-family: Playfull;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  white-space: pre;
+  opacity: 0;
+  transform: scale(0);
+  animation: fadeIn 2.4s forwards;
+  text-transform: uppercase;
+  text-shadow: 0 1px #bbb, 0 2px #bbb, 0 3px #bbb, 0 4px #bbb, 0 5px #bbb,
+    0 6px #bbb, 0 7px #bbb, 0 8px #bbb, 0 9px #bbb,
+    0 50px 25px rgba(0, 0, 0, 0.2);
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.header .text {
+  width: 78%;
+  height: 3vw;
+  margin: 2vw auto;
+  font-size: 2vw;
+  color: #dff1d4;
+  display: flex;
+  flex-wrap: wrap;
+  white-space: pre;
+}
+
+.header .text span {
+  animation: landIn 0.8s ease-out backwards;
+}
+
+@keyframes landIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header .ico ul {
+  width: 21%;
+  height: 4vw;
+  margin: 0 auto;
+}
+
+.header .ico ul li {
+  float: left;
+  list-style: none;
+  width: 5vw;
+  height: 4vw;
+  line-height: 4vw;
+  text-align: center;
+}
+
+.header .ico ul li:hover {
+  border-bottom: 3px solid #fff;
+}
+
+.header .ico ul li:hover span {
+  font-size: 3vw;
+}
+
+.header .ico ul li span {
+  font-size: 2.7vw;
+  color: #fff;
+}
+
+.header .ico ul li:nth-child(2n) span {
+  font-size: 3.5vw;
+}
+
+.header .ico ul li:nth-child(2n):hover span {
+  font-size: 3.8vw;
+}
+
+.header .headerButton {
+  width: 15%;
+  height: 3.5vw;
+  margin: 0 auto;
+  margin-top: 1.5vw;
+  text-align: center;
+}
+
+.headerButton .btn {
+  position: relative;
+  margin: 0 auto;
+  width: var(--btn-w);
+  color: var(--primary);
+  border: 0.15em solid var(--primary);
+  border-radius: 5em;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 2em;
+  cursor: pointer;
+}
+.headerButton .dot {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: var(--dot-w);
+  height: 100%;
+  border-radius: 100%;
+  transition: all 300ms ease;
+  display: none;
+}
+.headerButton .dot:after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 0.4em);
+  top: -0.4em;
+  height: 0.8em;
+  width: 0.8em;
+  background: var(--primary);
+  border-radius: 1em;
+  border: 0.25em solid var(--solid);
+  box-shadow: 0 0 0.7em var(--solid), 0 0 2em var(--primary);
+}
+.headerButton .btn:hover .dot,
+.headerButton .btn:focus .dot {
+  animation: atom 2s infinite linear;
+  display: block;
+}
+@keyframes atom {
+  0% {
+    transform: translateX(0) rotate(0);
+  }
+  30% {
+    transform: translateX(var(--tr-X)) rotate(0);
+  }
+  50% {
+    transform: translateX(var(--tr-X)) rotate(180deg);
+  }
+  80% {
+    transform: translateX(0) rotate(180deg);
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+  }
+}

@@ -1,0 +1,65 @@
+.pagination {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+.pagination ul {
+  width: 40%;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 0.3px 0.6px rgba(0, 0, 0, 0.056),
+    0 0.7px 1.3px rgba(0, 0, 0, 0.081), 0 1.3px 2.5px rgba(0, 0, 0, 0.1),
+    0 2.2px 4.5px rgba(0, 0, 0, 0.119), 0 4.2px 8.4px rgba(0, 0, 0, 0.144),
+    0 10px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.pagination ul li {
+  float: left;
+  width: 5%;
+  margin: 0 5px;
+}
+.pagination ul li.page-number {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.pagination ul li.page-number:hover span {
+  color: white;
+  background: #777;
+}
+.pagination ul li.page-number.active span {
+  color: white;
+  background: #333;
+}
+.pagination ul li.page-prev,
+.pagination ul li.page-next {
+  font-weight: 700;
+}
+.pagination ul li.page-prev {
+  margin-right: 20px;
+}
+.pagination ul li.page-next {
+  margin-left: 20px;
+}
+.pagination ul li span {
+  display: block;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #777;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.pagination ul li span.prev:hover path,
+.pagination ul li span.next:hover path {
+  fill: black;
+}

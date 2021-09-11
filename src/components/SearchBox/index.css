@@ -1,0 +1,98 @@
+.searchBox {
+  position: fixed;
+  width: 40vw;
+  height: 50vh;
+  animation: animation 1s;
+  background: #eeeeeed7;
+  border-radius: 8px;
+  left: calc(50% - 25vw);
+  top: 20vh;
+  overflow: hidden;
+  z-index: 999;
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.searchBox .top {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e6e7e798;
+  width: 100%;
+  height: 10%;
+  line-height: 35px;
+  padding: 0 10px;
+}
+
+.searchBox .top span:first-child {
+  font-size: 20px;
+}
+
+.searchBox .top span:last-child {
+  cursor: pointer;
+}
+
+.searchBox .top input {
+  width: 90%;
+  border: 0;
+  background-color: #e6e7e72f;
+  padding-left: 10px;
+  outline: none;
+}
+
+.searchBox .content {
+  width: 100%;
+  height: 88%;
+  overflow: auto;
+}
+
+.searchBox .content .ico {
+  display: block;
+  width: 10%;
+  line-height: 300px;
+  margin: 0 auto;
+  font-size: 80px;
+  color: #c8c8c9;
+}
+
+.searchBox .content .contentBox ul li {
+  list-style: disc;
+  width: 90%;
+  border-bottom: 1px dashed #ccc;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.searchBox .content .contentBox ul li .title {
+  text-decoration: underline;
+  font-size: 22px;
+  font-weight: bold;
+  color: #555;
+}
+
+.searchBox .content .contentBox ul li .title:hover {
+  color: #333;
+}
+
+.searchBox .content .contentBox ul li .text {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  color: #777;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+}
+
+.searchBox .content .contentBox ul li .text:hover {
+  color: #555;
+}

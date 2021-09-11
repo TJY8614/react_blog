@@ -1,0 +1,79 @@
+.register {
+  width: 100vw;
+  height: 100vh;
+  background: url("../../asset/Login/loginBg.png") no-repeat fixed;
+  overflow: hidden;
+}
+
+.registerBox {
+  width: 25vw;
+  height: 65vh;
+  background-color: #e1f5fa69;
+  margin: 10vw auto;
+  border-radius: 15px;
+}
+
+.registerBox .title {
+  width: 100%;
+  height: 5vw;
+  line-height: 5vw;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #b7c5e1;
+}
+
+.registerBox .inputBox,
+.buttonBox {
+  width: 100%;
+  text-align: center;
+}
+
+.registerBox .inputBox input {
+  width: 80%;
+  height: 3vw;
+  margin: 3vh;
+  border-radius: 8px;
+  border: 0;
+  font-size: 20px;
+  padding-left: 20px;
+  color: #7588af;
+  background-color: #e1f5fa69;
+  outline-color: #83a2e0;
+}
+
+.registerBox .buttonBox input {
+  width: 80%;
+  height: 3vw;
+  margin: 3vh;
+  border-radius: 8px;
+  outline: none;
+  border: 0;
+  font-size: 20px;
+  outline-color: #83a2e0;
+  background-color: #b7c5e1;
+  color: #fff;
+  cursor: pointer;
+}
+
+.registerBox .buttonBox :hover {
+  background-color: #8fabe4;
+}
+
+.registerBox .text {
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.registerBox .text span {
+  color: #8fabe4;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.registerBox .confirmText {
+  margin-top: -1vw;
+  margin-left: 3vw;
+  color: #83a2e0;
+}

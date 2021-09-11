@@ -1,0 +1,61 @@
+.labels {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.labels main {
+  width: 70%;
+  box-shadow: rgba(165, 159, 159, 0.9) 0px 10px 20px 0px;
+  position: relative;
+  font-family: 微软雅黑;
+  box-sizing: border-box;
+  margin: auto auto 10px;
+  border-radius: 10px;
+  transition: all 0.8s ease 0s;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.labels .bg {
+  width: 100%;
+  height: 350px;
+}
+
+.labels .bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.labels .title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #fbc4c3;
+}
+
+.labels .gobackIco {
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+  font-size: 30px;
+  margin-left: 5%;
+  color: #fbc4c3;
+}
+
+.labels .content {
+  width: 70%;
+  height: 20vh;
+  margin: 0 auto;
+}
+
+.labels .content ul li {
+  float: left;
+  padding: 0 3%;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 5%;
+  color: #f9d6bc;
+  font-size: 20px;
+  cursor: pointer;
+}

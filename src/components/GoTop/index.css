@@ -1,0 +1,12 @@
+.onTop {
+  position: absolute;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.onTop span {
+  font-size: 50px;
+  color: #8fc4ba !important;
+}

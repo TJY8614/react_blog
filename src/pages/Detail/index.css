@@ -1,0 +1,87 @@
+.detail {
+  padding-bottom: 30px;
+}
+
+.detail .container {
+  width: 70%;
+  box-shadow: rgba(165, 159, 159, 0.9) 0px 10px 20px 0px;
+  position: relative;
+  font-family: 微软雅黑;
+  box-sizing: border-box;
+  margin: auto auto 10px;
+  border-radius: 10px;
+  transition: all 0.8s ease 0s;
+  margin-top: 20px;
+}
+.detail .container .img {
+  width: 100%;
+  overflow: hidden;
+  height: 400px;
+  border-radius: 10px 10px 0 0;
+}
+.detail .container img {
+  width: 100%;
+}
+.detail .content {
+  padding: 10px;
+  padding-top: 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+.detail .title {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.detail .publish_date {
+  float: right;
+  font-size: 16px;
+  margin-right: 20px;
+}
+.detail .artical-content {
+  margin-top: 10px;
+}
+.detail .comment-title {
+  margin-top: 10px;
+  color: #f7f7;
+}
+.detail .comment-box textarea {
+  width: 400px;
+  height: 200px;
+}
+.detail .publish-btn {
+  float: right;
+  width: 20px;
+  height: 20px;
+  background-color: #f5f5;
+  margin-right: 10px;
+}
+.detail .iconfont {
+  color: #ccc;
+}
+.detail .ico {
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.detail .itemLabel {
+  height: 50px;
+  line-height: 50px;
+}
+
+.detail .itemLabel span {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  border-radius: 3px;
+  margin-right: 10px;
+  border: 1px solid #91c4ba;
+  background-color: #8fc4baab;
+  color: #fff;
+}

@@ -1,0 +1,98 @@
+.menu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #cdddac;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.menu span {
+  font-size: 30px;
+}
+
+.menuModal {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: -100vw;
+  background-color: rgba(0, 0, 0, 0.281);
+  animation: menuAnimationFadeOut 1s;
+  -webkit-animation: menuAnimationFadeOut 1s; /*Safari 与 Chrome*/
+}
+
+.menuModalActive {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.281);
+  animation: menuAnimationFadeIn 1s;
+  -webkit-animation: menuAnimationFadeIn 1s; /* Safari 与 Chrome */
+}
+
+.menuMain {
+  width: 25%;
+  height: 100%;
+  background-color: #8fc4ba;
+  opacity: 0.8;
+  padding-top: 5vw;
+}
+
+.menuMain ul li {
+  width: 100%;
+  height: 5vw;
+  line-height: 5vw;
+  text-align: center;
+  cursor: pointer;
+}
+
+.menuMain ul li:hover {
+  background-color: #6dc5b5;
+  color: #fff;
+}
+
+.menuMain ul li span {
+  display: inline-block;
+  letter-spacing: 3px;
+  width: 100%;
+  height: 100%;
+}
+
+.menuMain ul li span:hover {
+  color: #fff;
+}
+@keyframes menuAnimationFadeIn {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes menuAnimationFadeIn /* Safari 与 Chrome */ {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes menuAnimationFadeOut {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100vw;
+  }
+}
+
+@-webkit-keyframes menuAnimationFadeOut /* Safari 与 Chrome */ {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100vw;
+  }
+}

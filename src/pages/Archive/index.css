@@ -1,0 +1,238 @@
+.archive {
+  padding-bottom: 20px;
+}
+
+.archive main {
+  width: 70%;
+  height: 120vh;
+  box-shadow: rgba(165, 159, 159, 0.9) 0px 10px 20px 0px;
+  position: relative;
+  font-family: 微软雅黑;
+  box-sizing: border-box;
+  margin: auto auto 10px;
+  border-radius: 10px;
+  transition: all 0.8s ease 0s;
+  margin-top: 20px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.archive .bg {
+  width: 100%;
+  height: 40%;
+}
+
+.archive .bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.archive .title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #85e1f8;
+}
+
+.archive .time {
+  float: left;
+  width: 40%;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.archive .time ul li {
+  width: 30%;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #74d9eb;
+  cursor: pointer;
+  color: #98cdd6;
+}
+
+.archive .time ul li span {
+  color: #ccc;
+}
+
+.archive .time ul li:hover {
+  color: #85e1f8;
+}
+
+.archive .content {
+  overflow: hidden;
+}
+
+.archive .content .list {
+  width: 70%;
+  float: left;
+  padding: 0 2%;
+}
+
+.archive .content .list .ico {
+  float: left;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  margin-left: -10px;
+}
+
+.archive .content .list .ico img {
+  width: 40px;
+  height: 40px;
+}
+
+.archive .content .list .item {
+  float: left;
+  width: 80%;
+  height: 15vh;
+  cursor: pointer;
+}
+
+.archive .content .list .item .pic {
+  float: left;
+  width: 10%;
+  height: 100%;
+}
+
+.archive .content .list .item .point {
+  float: left;
+  width: 15px;
+  height: 15px;
+  background-color: #b1ebfa;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+.archive .content .list .item .line {
+  width: 2px;
+  height: 100%;
+  background-color: rgb(139, 207, 216);
+  margin-left: 6px;
+}
+
+.archive .content .list .item .blogBox {
+  position: relative;
+  float: left;
+  width: 90%;
+  height: 80%;
+  background-color: rgb(139, 207, 216);
+  border-radius: 8px;
+}
+
+.archive .content .list .item .blogBox:before,
+#demo:after {
+  width: 0;
+  height: 0;
+  content: "";
+  position: absolute;
+  border: solid transparent;
+  left: -6%;
+  top: 14%;
+}
+.archive .content .list .item .blogBox:before {
+  border-width: 12px;
+  border-right-color: rgb(139, 207, 216);
+}
+.archive .content .list .item .blogBox:after {
+  border-width: 10px;
+  border-right-color: #fff;
+}
+
+.archive .currentTime {
+  float: left;
+  width: 100%;
+}
+
+.archive .currentTime .timePic {
+  float: left;
+  width: 10%;
+  height: 35px;
+}
+
+.archive .currentTime .timePic .point {
+  float: left;
+  width: 15px;
+  height: 15px;
+  background-color: #b1ebfa;
+  border-radius: 50%;
+}
+
+.archive .currentTime .timePic .line {
+  width: 2px;
+  height: 100%;
+  background-color: rgb(139, 207, 216);
+  margin-left: 6px;
+}
+
+.archive .currentTime .timePic p {
+  float: left;
+}
+
+.archive .paging {
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 auto;
+}
+
+.archive .paging i {
+  border: solid #bee5ec;
+  border-width: 0 2px 2px 0;
+}
+
+.archive .paging span {
+  color: #9ce2e7;
+}
+
+.archive .content .list .item .blogBox .blogTitle {
+  text-align: left;
+  color: #fff;
+  width: 100%;
+  height: 60%;
+  line-height: 50px;
+  padding-left: 20px;
+  border-bottom: 1px solid #fff;
+  font-size: 18px;
+}
+
+.archive .content .list .item .blogBox .footer {
+  width: 100%;
+  height: 30%;
+  line-height: 30px;
+  padding-left: 20px;
+}
+
+.archive .content .list .item .blogBox .footer .blogTime {
+  float: left;
+  width: 60%;
+  color: #eee;
+}
+
+.archive .content .list .item .blogBox .footer .labels {
+  float: left;
+  width: 40%;
+}
+
+.archive .content .list .item .blogBox .footer .labels span {
+  display: inline-block;
+  padding: 0 5px;
+  background-color: #85e1f8;
+  margin-right: 5px;
+  border-radius: 3px;
+  margin-top: 3px;
+  color: #fff;
+}
+
+.archive .gobackIco {
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+  font-size: 30px;
+  margin-left: 5%;
+  color: #8bcfd8;
+}
